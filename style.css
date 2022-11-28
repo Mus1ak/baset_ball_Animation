@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(226, 183, 73);
+}
+@keyframes ballanimate {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+    
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: -215px;
+    }
+}
+img{
+    height: 50px;
+
+    align-items: center;
+    position: relative;
+    left: 100px;
+    animation-name: ballanimate;
+    animation-timing-function: cubic-bezier(0.52, -0.01, 1, 0.75);
+    animation-duration: .6s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.content{
+    display: grid;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(116, 215, 226);
+    justify-content: center;
+    align-content: center;
+}
